@@ -1,4 +1,4 @@
-# Wisconin-Relative-Nesting
+# Wisconsin-Relative-Nesting
 
 This project was undertaken for API 231: Geographic Information Systems for Public Policy at the Harvard Kennedy School by Luke Schields and Ryan Grunwald.
 
