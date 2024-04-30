@@ -27,3 +27,5 @@ Proposed redistricting maps analyzed include:
 NOTE:
 Our census block file was too large (750mb) to push to github. The 2023 TIGER/Line Shapefile can be downloaded from the U.S. Census Bureau's website [here]([url](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2023&layergroup=Blocks+%282020%29)) and ran through census_block_prep.r locally to prepare it for the analysis.
 https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2023&layergroup=Blocks+%282020%29 
+
+Additionally, the school district file may be used for the geospatial relative nesting analysis only, and should be removed from 'coi_list' prior to performing the population relative nesting analysis.
