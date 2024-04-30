@@ -5,7 +5,7 @@ This project was performed as a project for API 231: Geographic Information Syst
 The script (wi_rn.r) analyzes proposals for redistricting in the State of Wisconsin submitted after the 2020 census.  Proposals for redistricting, including for the Wisconsin State Assembly (wsa), Wisconsin State Senate (wss), and U.S. Congress (wc) are analyzed against community of interest (coi) proxies. Final outputs include spatial relative nesting (RN) scores for each combination of redistricting proposal and coi, using both cois and redistricting proposals as the source, and population RN scores using both cois and redistricting proposals as the source. Spatial RN scores are calculated using the SUNGEO package and population RN scores are calculated manually using the formula pioneered by Zhukov, Byers, Davidson and Kollman in "Integrating Data Across Misaligned Spatial Units" (2022).
 
 COI maps analyzed include:
-1. Designated Media Districts (dmas.geojson) from Nielson
+1. Designated Media Districts ('dmas.geojson') from Nielson
 2. Combined Statistical Areas (combined_sa.geojson) from the U.S. Census Bureau
 3. Metropolitan Statistical Areas (met_sa.geojson) from the U.S. Census Bureau
 4. Micropolitan Statistical Areas (mic_sa.geojson) from the U.S. Census Bureau
