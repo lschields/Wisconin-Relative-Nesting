@@ -1,6 +1,6 @@
 # Wisconin-Relative-Nesting
 
-This project was performed as a project for API 231: Geographic Information Systems for Public Policy at the Harvard Kennedy School by Luke Schields and Ryan Grunwald.
+This project was undertaken for API 231: Geographic Information Systems for Public Policy at the Harvard Kennedy School by Luke Schields and Ryan Grunwald.
 
 The script (wi_rn.r) analyzes proposals for redistricting in the State of Wisconsin submitted after the 2020 census.  Proposals for redistricting, including for the Wisconsin State Assembly (wsa), Wisconsin State Senate (wss), and U.S. Congress (wc) are analyzed against community of interest (coi) proxies. Final outputs include spatial relative nesting (RN) scores for each combination of redistricting proposal and coi, using both cois and redistricting proposals as the source, and population RN scores using both cois and redistricting proposals as the source. Spatial RN scores are calculated using the SUNGEO package and population RN scores are calculated manually using the formula pioneered by Zhukov, Byers, Davidson and Kollman in "Integrating Data Across Misaligned Spatial Units" (2022).
 
