@@ -5,9 +5,12 @@ This project was performed as a project for API 231: Geographic Information Syst
 The script (wi_rn.r) analyzes proposals for redistricting in the State of Wisconsin submitted after the 2020 census.  Proposals for redistricting, including for the Wisconsin State Assembly (wsa), Wisconsin State Senate (wss), and U.S. Congress (wc) are analyzed against community of interest (coi) proxies. Final outputs include spatial relative nesting (RN) scores for each combination of redistricting proposal and coi, using both cois and redistricting proposals as the source, and population RN scores using both cois and redistricting proposals as the source. Spatial RN scores are calculated using the SUNGEO package and population RN scores are calculated manually using the formula pioneered by Zhukov, Byers, Davidson and Kollman in "Integrating Data Across Misaligned Spatial Units" (2022).
 
 $RN = \frac{1}{N_s} \sum\limits_{i}^{N_s} \sum\limits_{i\cap j}^{N_{i\cap D}} \left( \frac{a_{i\cap j}}{a_i} \right)^2$  
-Where $G_s$ is the set of source polygons, indexed $i = 1$,... $N_s$,  
-$G_D$ is the set of destination polygons, indexed $j$ = 1,... $N_D$,  
-$G_{s\cap D}$ is the set of intersected polygons, indexed $i\cap j$ = 1  
+Where $G_s$ is the set of source polygons, indexed $i = 1,...N_s$,  
+$G_D$ is the set of destination polygons, indexed $j = 1,... N_D$,  
+$G_{s\cap D}$ is the set of intersected polygons, indexed $i\cap j = 1,...N_{s\cap d}$,  
+$a_i$ is the area of the source polygon $i$,
+$a_j$ is the area of the destination polygon $j$, and  
+$a_{i\cap j}$ is th area of the intersect $i\cap j$.
 
 COI maps analyzed include:
 1. Designated Media Districts (dmas.geojson) from Nielson
