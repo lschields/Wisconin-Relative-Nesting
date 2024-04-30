@@ -21,46 +21,46 @@ library(SUNGEO)
 
 ############ Load Required Maps ############
 #COI Maps
-dmas <- sf::read_sf(dsn =  "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/dmas.geojson")
-#school_dist <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/unified_school_dist_buffered.geojson")
-combined_sa <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/combined_sa.geojson")
-met_mic_sa <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/met_mic_sa.geojson")
-met_sa <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/met_sa.geojson")
-mic_sa <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/mic_sa.geojson")
+dmas <- sf::read_sf(dsn =  "dmas.geojson")
+school_dist <- sf::read_sf(dsn = "school_dist.geojson")
+combined_sa <- sf::read_sf(dsn = "combined_sa.geojson")
+met_mic_sa <- sf::read_sf(dsn = "met_mic_sa.geojson")
+met_sa <- sf::read_sf(dsn = "met_sa.geojson")
+mic_sa <- sf::read_sf(dsn = "mic_sa.geojson")
 
 coi_list <- list(dmas, 
-#                 school_dist, 
+                 school_dist, 
                  combined_sa, 
                  met_mic_sa, 
                  met_sa, 
                  mic_sa)
 
 coi_list_names <- list("Media Districts", 
-#                       "School Districts", 
+                       "School Districts", 
                        "Combined Statistical Areas", 
                        "Metro- and Micro- Statistical Areas Combined", 
                        "Metropolitan Statistical Areas", 
                        "Micropolitan Statistical Areas")
 
 #2022 Maps
-wsa_2022 <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/wsa_2022.geojson")
-wss_2022 <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/wss_2022.geojson")
-wc_2022 <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/wc_2022.geojson")
+wsa_2022 <- sf::read_sf(dsn = "wsa_2022.geojson")
+wss_2022 <- sf::read_sf(dsn = "wss_2022.geojson")
+wc_2022 <- sf::read_sf(dsn = "wc_2022.geojson")
 
 #2024 Maps
-wsa_2024 <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/wsa_2024.geojson")
-wss_2024 <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/wss_2024.geojson")
+wsa_2024 <- sf::read_sf(dsn = "wsa_2024.geojson")
+wss_2024 <- sf::read_sf(dsn = "wss_2024.geojson")
 
 #academic models
-fox_fair <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/fox_fair.geojson")
-petering_wsa <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/petering_wsa.geojson")
-petering_wss <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/petering_wss.geojson")
+fox_fair <- sf::read_sf(dsn = "fox_fair.geojson")
+petering_wsa <- sf::read_sf(dsn = "petering_wsa.geojson")
+petering_wss <- sf::read_sf(dsn = "petering_wss.geojson")
 
 #other
 #evers commission
-evers <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/evers.geojson")
+evers <- sf::read_sf(dsn = "evers.geojson")
 #ryan maps
-ryan <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/ryan.geojson")
+ryan <- sf::read_sf(dsn = "ryan.geojson")
 
 maps_list <- list(wsa_2022, 
                   wss_2022, 
@@ -85,7 +85,7 @@ maps_list_names <- list("2022 Assembly",
                         "Ryan's")
 
 #census blocks
-census_blocks <- sf::read_sf(dsn = "/Users/lukeschields/Documents/Documents (icloud)/Y2 S2/API 231/Final Project/test/census_blocks.geojson")
+census_blocks <- sf::read_sf(dsn = "census_blocks.geojson")
 
 
 ############ Geospatial Relative Nesting Scores ############
