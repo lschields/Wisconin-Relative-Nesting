@@ -8,7 +8,7 @@ $RN = \frac{1}{N_s} \sum\limits_{i}^{N_s} \sum\limits_{i\cap j}^{N_{i\cap D}} \l
 Where $G_s$ is the set of source polygons, indexed $i = 1,...N_s$,  
 $G_D$ is the set of destination polygons, indexed $j = 1,... N_D$,  
 $G_{s\cap D}$ is the set of intersected polygons, indexed $i\cap j = 1,...N_{s\cap d}$,  
-$a_i$ is the area of the source polygon $i$,
+$a_i$ is the area of the source polygon $i$,  
 $a_j$ is the area of the destination polygon $j$, and  
 $a_{i\cap j}$ is th area of the intersect $i\cap j$.
 
