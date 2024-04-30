@@ -10,7 +10,7 @@ $G_D$ is the set of destination polygons, indexed $j = 1,... N_D$,
 $G_{s\cap D}$ is the set of intersected polygons, indexed $i\cap j = 1,...N_{s\cap d}$,  
 $a_i$ is the area of the source polygon $i$,  
 $a_j$ is the area of the destination polygon $j$, and  
-$a_{i\cap j}$ is th area of the intersect $i\cap j$.
+$a_{i\cap j}$ is the area of the intersect $i\cap j$.
 
 COI maps analyzed include:
 1. Designated Media Districts (dmas.geojson) from Nielson
