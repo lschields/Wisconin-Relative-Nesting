@@ -1,0 +1,9 @@
+library(dplyr)
+library(sf)
+
+census_blocks <- sf::read_sf(dsn = "[filepath]")
+to_keep <- which(names(census_blocks) %in% c("GEOID20", "CNTY_FIPS", "CNTY_NAME", "WARD_FIPS", "PERSONS", "geometry"))
+census_blocks <- census_blocks[,c(to_keep)]
+colnames(census_blocks)[5] <- "cb_pop"
+
+st_write(census_blocks, "census_blocks.geojson")
