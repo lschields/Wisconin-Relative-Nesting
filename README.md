@@ -23,3 +23,6 @@ Proposed redistricting maps analyzed include:
 8. Governor Tony Evers U.S. House District proposal (evers.geojson)
 9. Fox Fair U.S. House District proposal (fox_fair.geojson)
 10. A hypothetical U.S. House District proposal designed by project team member Ryan Grunwald (ryan.geojson)
+
+NOTE:
+Our census block file was too large (750mb) to push to github. The 2023 TIGER/Line Shapefile can be downloaded from the U.S. Census Bureau's website [here]([url](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2023&layergroup=Blocks+%282020%29)) and ran through census_block_prep.r locally to prepare it for the analysis.
